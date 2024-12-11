@@ -39,3 +39,4 @@ const TEXT_REGULAR = 14.0;
 const TEXT_REGULAR_2X = 16.0;
 const TEXT_18 = 18.0;
 const TEXT_REGULAR_3X = 20.0;
+const double COCKTAIL_LIST_ITEM_HEIGHT = 80;

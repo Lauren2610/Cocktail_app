@@ -1,7 +1,9 @@
 import 'package:cocktail_flutter/Constants/style.dart';
+import 'package:cocktail_flutter/Pages/ingredientItem.dart';
 import 'package:flutter/material.dart';
 import 'package:cocktail_flutter/Constants/margin.dart';
 import 'package:cocktail_flutter/Constants/String.dart';
+import 'ingredientItem.dart';
 
 class ingredientPage extends StatefulWidget {
   const ingredientPage({Key? key}) : super(key: key);
@@ -42,20 +44,23 @@ class _ingredientPageState extends State<ingredientPage> {
             child: ListView.builder(
               itemCount: ingredientList.length,
               itemBuilder: (context, index) {
-                return Container(
-                  height: MARGIN_XXXLARGE,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(12.0),
-                    color: Colors.orange,
-                  ),
-                  margin: EdgeInsets.all(10.0),
-                  child: Align(
-                    alignment: Alignment.center,
-                    child: Text(
-                      ingredientList[index],
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        color: Colors.white,
+                return GestureDetector(
+                  onTap: () {},
+                  child: Container(
+                    height: MARGIN_XXXLARGE,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(12.0),
+                      color: Colors.orange,
+                    ),
+                    margin: EdgeInsets.all(10.0),
+                    child: Align(
+                      alignment: Alignment.center,
+                      child: Text(
+                        ingredientList[index],
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          color: Colors.white,
+                        ),
                       ),
                     ),
                   ),
